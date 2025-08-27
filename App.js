@@ -107,9 +107,11 @@ export default function App() {
           estimatedItemSize={24}
           keyboardShouldPersistTaps="handled"
           style={{ alignSelf: "stretch" }}
-          contentContainerStyle={{ paddingVertical: 8 }}
+          contentContainerStyle={{
+            paddingVertical: 8,
+            alignItems: "center"}}
           renderItem={({ item }) => (
-            <Text style={{ fontSize: 18, lineHeight: 24 }}>
+            <Text style={{ fontSize: 18, lineHeight: 24, textAlign: "center" }}>
               {item.value1} {item.op} {item.value2} = {item.res}
             </Text>
           )}
